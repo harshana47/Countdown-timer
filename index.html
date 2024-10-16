@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+<div class="container">
+    <h1>Countdown Timer</h1>
+    <div class="inputGroup">
+        <div>
+            <label class="label" for="date1">Enter Date:</label>
+            <input type="date" class="inputDate" id="date1">
+        </div>
+        <div>
+            <label class="label" for="time1">Enter Time:</label>
+            <input type="time" class="inputTime" id="time1">
+        </div>
+    </div>
+    <section>
+        <div class="buttons">
+            <button id="stop">Stop</button>
+            <button id="reset">Reset</button>
+            <button id="calculate">Calculate</button>
+        </div>
+    </section>
+    <div class="timeDisplay">
+        <div class="timeUnit days">
+            <p>DAY</p>
+            <div class="time" id="countdown-days">0</div>
+        </div>
+        <div class="timeUnit hours">
+            <p>HOURS</p>
+            <div class="time" id="countdown-hours">0</div>
+        </div>
+        <div class="timeUnit minutes">
+            <p>MINUTES</p>
+            <div class="time" id="countdown-minutes">0</div>
+        </div>
+        <div class="timeUnit seconds">
+            <p>SECONDS</p>
+            <div class="time" id="countdown-seconds">0</div>
+        </div>
+    </div>
+</div>
+</body>
+</html>
